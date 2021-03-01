@@ -1,15 +1,15 @@
 <?php include 'header.php'; ?>
 
-<h1 align=center>
-    <svg height="500" width="400" >
+<h1 style="margin-left: 40%; margin-top: -8%; position: absolute; ">
+    <svg height="400px" width="250" >
     <defs>
         <clipPath id="myCircle">
-    <circle cx="250" cy="145" r="125" stroke="yellow" stroke-width="10" fill="black">
+    <circle cx="100" cy="200" r="100" stroke="yellow" stroke-width="10" fill="black">
     </defs>
-    <image width="500" height="335" href="img/nash.jpg" clip-path="url(#myCircle)" />
+    <image  height="400px" width="250" href="img/nash.jpg" clip-path="url(#myCircle)" />
       </svg>
-    </svg>
 </h1>
+<h5 style="margin-top: 13%; padding-left:39%; color: white; font-family:monospace " > Mohammad, Al-Nashief S.</h5>
 
 
 <?php include 'footer.php'; ?>
