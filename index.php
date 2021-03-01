@@ -9,6 +9,7 @@
     <image  height="400px" width="250" href="img/nash.jpg" clip-path="url(#myCircle)" />
       </svg>
 </h1>
-<h5 class="name" style="margin-top: 13%; padding-left:39%; color: white; font-family:monospace " > Mohammad, Al-Nashief S.</h5>
+<h5 style="margin-top: 13%; padding-left:39%; color: white; font-family:monospace " > Mohammad, Al-Nashief S.</h5>
+
 
 <?php include 'footer.php'; ?>
