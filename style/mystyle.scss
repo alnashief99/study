@@ -38,6 +38,11 @@ svg {
         transition: .5s linear;
     }
 
+    &:not(:hover) {
+        transition: .5s linear;
+
+    }
+
 }
 
 li {
@@ -61,12 +66,12 @@ li {
 .facebook {
 
     color: rgb(48, 135, 216);
-     cursor: pointer;
+    cursor: pointer;
     text-decoration: none;
     font-size: 18px;
     display: inline;
     padding-right: 20px;
-    background-color:inherit;
+    background-color: inherit;
     border: none;
 
 
@@ -74,6 +79,12 @@ li {
         color: rgb(43, 136, 35);
         transition: .5s linear;
         font-size: 22px;
+
+    }
+
+    &:not(:hover) {
+        transition: .5s linear;
+        font-size: 18;
 
     }
 }
@@ -85,13 +96,19 @@ li {
     font-size: 18px;
     display: inline;
     padding-right: 20px;
-    background-color:inherit;
+    background-color: inherit;
     border: none;
 
     &:hover {
         color: rgb(0, 240, 60);
         transition: .5s linear;
         font-size: 22px;
+    }
+
+    &:not(:hover) {
+        transition: .5s linear;
+        font-size: 18;
+
     }
 }
 
@@ -107,35 +124,76 @@ body {
     background-size: cover;
     background-color: gray;
 
-    .frame {
-        display: inline;
 
-    }
+}
 
-    .pics {
+.frame {
+    display: inline;
 
-        display: inline-block;
-        position: absolute;
-        margin-left: 42%;
-        height: 200px;
-        width: 200px;
-        top: 60px;
-        border-radius: 100%;
+}
+
+.pics {
+
+    display: inline;
+    position: absolute;
+    margin-left: 42%;
+    height: 200px;
+    width: 200px;
+    top: 60px;
+    border-radius: 100%;
+    padding-bottom: 0px;
+    border: solid;
+    border-color: transparent;
+    border-width: 4px;
+
+    &:hover {
         border: solid;
         border-color: #42cbf5;
-        border-width: 3px;
-        padding-bottom: 0px;
+        border-width: 4px;
+        height: 205px;
+        width: 205px;
+        transition: .5s;
+        cursor: pointer;
     }
 
-    .nash {
+    &:not(:hover) {
+        transition: .5s;
 
-        position: absolute;
-        top: 250px;
-        margin-left: 40%;
-        color: green;
-        font-family: Cursive;
-        display: inline-block;
-        text-align: center;
     }
+}
+
+.nash {
+
+    position: absolute;
+    top: 255px;
+    margin-left: 40%;
+    color: green;
+    font-family: Cursive;
+    display: inline-block;
+    text-align: center;
+}
+
+.map {
+    display: inline-block;
+    height: 250px;
+    width: 200px;
+    top: 50%;
+    right: 20px;
+    position: absolute;
+    margin-bottom: 10px;
+}
+
+.location {
+
+    border-radius: 30px;
+}
+
+.location-tag {
+    display: absolute;
+    position: relative;
+    float: right;
+    right: 40px;
+    color: #e1f590;
+    font-family:Monospace;
 
 }

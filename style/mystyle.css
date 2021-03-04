@@ -26,6 +26,8 @@ svg {
     background-color: #05ac9e;
     color: white;
     transition: .5s linear; }
+  .resume:not(:hover) {
+    transition: .5s linear; }
 
 li {
   float: right;
@@ -49,6 +51,9 @@ li {
     color: #2b8823;
     transition: .5s linear;
     font-size: 22px; }
+  .facebook:not(:hover) {
+    transition: .5s linear;
+    font-size: 18; }
 
 .github {
   color: #00fff2;
@@ -63,6 +68,9 @@ li {
     color: #00f03c;
     transition: .5s linear;
     font-size: 22px; }
+  .github:not(:hover) {
+    transition: .5s linear;
+    font-size: 18; }
 
 body {
   margin-top: 2%;
@@ -72,27 +80,60 @@ body {
   background-position: center center;
   background-size: cover;
   background-color: gray; }
-  body .frame {
-    display: inline; }
-  body .pics {
-    display: inline-block;
-    position: absolute;
-    margin-left: 42%;
-    height: 200px;
-    width: 200px;
-    top: 60px;
-    border-radius: 100%;
+
+.frame {
+  display: inline; }
+
+.pics {
+  display: inline;
+  position: absolute;
+  margin-left: 42%;
+  height: 200px;
+  width: 200px;
+  top: 60px;
+  border-radius: 100%;
+  padding-bottom: 0px;
+  border: solid;
+  border-color: transparent;
+  border-width: 4px; }
+  .pics:hover {
     border: solid;
     border-color: #42cbf5;
-    border-width: 3px;
-    padding-bottom: 0px; }
-  body .nash {
-    position: absolute;
-    top: 250px;
-    margin-left: 40%;
-    color: green;
-    font-family: Cursive;
-    display: inline-block;
-    text-align: center; }
+    border-width: 4px;
+    height: 205px;
+    width: 205px;
+    transition: .5s;
+    cursor: pointer; }
+  .pics:not(:hover) {
+    transition: .5s; }
+
+.nash {
+  position: absolute;
+  top: 255px;
+  margin-left: 40%;
+  color: green;
+  font-family: Cursive;
+  display: inline-block;
+  text-align: center; }
+
+.map {
+  display: inline-block;
+  height: 250px;
+  width: 200px;
+  top: 50%;
+  right: 20px;
+  position: absolute;
+  margin-bottom: 10px; }
+
+.location {
+  border-radius: 30px; }
+
+.location-tag {
+  display: absolute;
+  position: relative;
+  float: right;
+  right: 40px;
+  color: #e1f590;
+  font-family: Monospace; }
 
 /*# sourceMappingURL=mystyle.css.map */
