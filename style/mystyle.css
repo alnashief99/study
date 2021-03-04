@@ -1,13 +1,15 @@
 .container {
-  margin: 0;
-}
+  margin: 0; }
 
 .navbar {
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.7);
   padding: 10px;
-  height: 40px;
-}
+  height: 40px; }
+
+svg {
+  width: 16px;
+  height: 16px; }
 
 .resume {
   color: #05ac9e;
@@ -19,52 +21,48 @@
   border-width: 1px;
   border-color: #05ac9e;
   border-radius: 10px;
-  margin-left: 10px;
-}
-
-.resume:hover {
-  background-color: #05ac9e;
-  color: white;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-}
+  margin-left: 10px; }
+  .resume:hover {
+    background-color: #05ac9e;
+    color: white;
+    transition: .5s linear; }
 
 li {
   float: right;
-  display: block;
-  padding: 10px 2px;
-}
-
-li:hover {
-  text-decoration: underline;
-}
+  display: inline-block;
+  padding: 10px 2px; }
+  li:hover {
+    text-decoration: underline;
+    display: inline;
+    right: 40px; }
 
 .facebook {
-  margin-right: 30px;
   color: #3087d8;
-  text-decoration: none;
   cursor: pointer;
-}
-
-.facebook:hover {
-  color: #2b8823;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-}
+  text-decoration: none;
+  font-size: 18px;
+  display: inline;
+  padding-right: 20px;
+  background-color: inherit;
+  border: none; }
+  .facebook:hover {
+    color: #2b8823;
+    transition: .5s linear;
+    font-size: 22px; }
 
 .github {
   color: #00fff2;
   cursor: pointer;
   text-decoration: none;
   font-size: 18px;
-}
-
-.github:hover {
-  color: #00f03c;
-  -webkit-transition: .5s linear;
-  transition: .5s linear;
-  text-decoration: underline;
-}
+  display: inline;
+  padding-right: 20px;
+  background-color: inherit;
+  border: none; }
+  .github:hover {
+    color: #00f03c;
+    transition: .5s linear;
+    font-size: 22px; }
 
 body {
   margin-top: 2%;
@@ -73,12 +71,28 @@ body {
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
-  background-color: darkslategrey;
-}
+  background-color: gray; }
+  body .frame {
+    display: inline; }
+  body .pics {
+    display: inline-block;
+    position: absolute;
+    margin-left: 42%;
+    height: 200px;
+    width: 200px;
+    top: 60px;
+    border-radius: 100%;
+    border: solid;
+    border-color: #42cbf5;
+    border-width: 3px;
+    padding-bottom: 0px; }
+  body .nash {
+    position: absolute;
+    top: 250px;
+    margin-left: 40%;
+    color: green;
+    font-family: Cursive;
+    display: inline-block;
+    text-align: center; }
 
-body .picture {
-  margin-left: 41.5%;
-  margin-top: -8%;
-  position: absolute;
-}
 /*# sourceMappingURL=mystyle.css.map */
